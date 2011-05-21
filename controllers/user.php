@@ -29,7 +29,7 @@ class User extends CI_Controller{
 
 		//checking if authenticated.
 		if(isset($user['private_gist_count']))
-			echo "Authenticated <br/>";
+			redirect('/user/getgist/' . $username);
 		else redirect('/user/');
 	}
 	
